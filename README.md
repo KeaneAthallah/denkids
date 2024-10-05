@@ -1,6 +1,6 @@
 # Denkids
 
-## Prosedur Pembuatan Denkids
+## Pembuatan Denkids
 
 1. Pembuatan aplikasi "Denkids" dimulai dengan mempersiapkan lingkungan pengembangan. Langkah pertama adalah menginstal Flutter dan Dart, yang bisa diunduh melalui situs resmi Flutter. Setelah itu, tambahkan Flutter ke PATH sistem dan jalankan perintah flutter doctor untuk memastikan semua dependensi sudah terpasang dengan benar. IDE yang disarankan untuk digunakan adalah Visual Studio Code atau Android Studio, dan pastikan plugin Flutter dan Dart sudah terpasang di dalamnya.
 
@@ -14,7 +14,7 @@
 
 6. Setelah aplikasi "Denkids" dirilis, penting untuk melakukan pemantauan performa dan penggunaan aplikasi, serta mengumpulkan feedback dari pengguna. Feedback ini berguna untuk perbaikan dan penambahan fitur di masa mendatang. Dengan demikian, aplikasi akan terus diperbarui dan berkembang sesuai kebutuhan pengguna.
 
-## Prosedur Pembuatan Denkidsv2
+## Prosedur Pembuatan Denkidsv4
 
 1. Untuk membuat aplikasi mobile bernama Denkids yang ditujukan bagi anak-anak, Anda dapat mengikuti prosedur berikut. Pertama, tentukan tujuan aplikasi ini, yaitu untuk menyediakan pengalaman edukatif yang interaktif bagi anak-anak melalui fitur quiz dan video animasi. Aplikasi ini akan dibangun menggunakan framework Flutter dengan bahasa pemrograman Dart dan ditargetkan untuk platform Android.
 
