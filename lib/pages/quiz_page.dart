@@ -75,35 +75,36 @@ class _QuizPageState extends State<QuizPage> {
 
     // Save the quiz data to Firestore
     await _firestoreService.addQuizResult(quizData);
-
-    showDialog(
-      context: context,
-      builder: (context) {
-        return AlertDialog(
-          backgroundColor: Colors.lightBlue.shade100,
-          title: const Text(
-            "Awesome!",
-            style: TextStyle(
-              fontSize: 26,
-              fontWeight: FontWeight.bold,
-              color: Colors.blue,
-            ),
-          ),
-          content: Text(result, style: const TextStyle(fontSize: 20)),
-          actions: [
-            TextButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
-              child: const Text(
-                "OK",
-                style: TextStyle(fontSize: 22, color: Colors.blueAccent),
+    if (mounted) {
+      showDialog(
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            backgroundColor: Colors.lightBlue.shade100,
+            title: const Text(
+              "Awesome!",
+              style: TextStyle(
+                fontSize: 26,
+                fontWeight: FontWeight.bold,
+                color: Colors.blue,
               ),
             ),
-          ],
-        );
-      },
-    );
+            content: Text(result, style: const TextStyle(fontSize: 20)),
+            actions: [
+              TextButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: const Text(
+                  "OK",
+                  style: TextStyle(fontSize: 22, color: Colors.blueAccent),
+                ),
+              ),
+            ],
+          );
+        },
+      );
+    }
   }
 
   // Function to navigate to the next question
