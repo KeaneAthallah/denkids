@@ -1,6 +1,6 @@
 # Denkids
 
-## Denkids by adm
+## Denkids
 
 1. Pembuatan aplikasi "Denkids" dimulai dengan mempersiapkan lingkungan pengembangan. Langkah pertama adalah menginstal Flutter dan Dart, yang bisa diunduh melalui situs resmi Flutter. Setelah itu, tambahkan Flutter ke PATH sistem dan jalankan perintah flutter doctor untuk memastikan semua dependensi sudah terpasang dengan benar. IDE yang disarankan untuk digunakan adalah Visual Studio Code atau Android Studio, dan pastikan plugin Flutter dan Dart sudah terpasang di dalamnya.
 
