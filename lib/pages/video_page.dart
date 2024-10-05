@@ -47,7 +47,7 @@ class VideoPageState extends State<VideoPage> {
       appBar: AppBar(
         centerTitle: true,
         title: const Text(
-          "Cabut gigi!",
+          "Animasi Denkids",
           style: TextStyle(fontWeight: FontWeight.w600, fontSize: 20),
         ),
       ),
