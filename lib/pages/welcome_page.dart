@@ -6,13 +6,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
-// TODO: Already done with bug fixes
-// TODO: need to fix this warning
-// TODO: trying to fix it
 class WelcomePage extends StatelessWidget {
   WelcomePage({super.key});
-  TextEditingController nameController = TextEditingController();
-  TextEditingController ageController = TextEditingController();
+  final TextEditingController nameController = TextEditingController();
+  final TextEditingController ageController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
