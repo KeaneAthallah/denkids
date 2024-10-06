@@ -39,12 +39,12 @@ dependencies:
   get: ^4.6.6
   video_player: ^2.9.1
   cloud_firestore: ^5.4.0
-  flutter_launcher_icons: "^0.14.1"
+#   flutter_launcher_icons: "^0.14.1"
 
-flutter_launcher_icons:
-  android: "launcher_icon"
-  ios: true
-  image_path: "assets/images/logo.png"
+# flutter_launcher_icons:
+#   android: "launcher_icon"
+#   ios: true
+#   image_path: "assets/images/logo.png"
 
 dev_dependencies:
   flutter_test:
