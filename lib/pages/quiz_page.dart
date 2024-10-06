@@ -62,7 +62,7 @@ class _QuizPageState extends State<QuizPage> {
     List<String> userAnswers = [];
 
     for (int i = 0; i < answers.length; i++) {
-      String answerText = answers[i] == true ? "Yes" : "No";
+      String answerText = answers[i] == true ? "Iya" : "Tidak";
       result += "${questions[i]}: $answerText\n";
       userAnswers.add(answerText);
     }
@@ -91,7 +91,12 @@ class _QuizPageState extends State<QuizPage> {
                 color: Colors.blue,
               ),
             ),
-            content: Text(result, style: const TextStyle(fontSize: 20)),
+            content: SingleChildScrollView(
+              child: Text(
+                result,
+                style: const TextStyle(fontSize: 20),
+              ),
+            ),
             actions: [
               TextButton(
                 onPressed: () {
