@@ -63,9 +63,13 @@ class VideoPageState extends State<VideoPage> {
                 future: started(),
                 builder: (BuildContext context, AsyncSnapshot<bool> snapshot) {
                   if (snapshot.data ?? false) {
-                    return AspectRatio(
-                      aspectRatio: _videoPlayerController.value.aspectRatio,
-                      child: VideoPlayer(_videoPlayerController),
+                    return FittedBox(
+                      fit: BoxFit.contain,
+                      child: SizedBox(
+                        width: _videoPlayerController.value.size.width,
+                        height: _videoPlayerController.value.size.height,
+                        child: VideoPlayer(_videoPlayerController),
+                      ),
                     );
                   } else {
                     return const Text('waiting for video to load');
