@@ -9,7 +9,11 @@
 .history
 .svn/
 migrate_working_dir/
-android/
+
+# Ignore the entire android directory
+/android/
+
+
 # IntelliJ related
 *.iml
 *.ipr
@@ -38,5 +42,6 @@ app.*.symbols
 app.*.map.json
 
 # Android Studio will place build artifacts here
-/android/app/*.json
-
+/android/app/debug
+/android/app/profile
+/android/app/release
