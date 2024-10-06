@@ -44,19 +44,19 @@ class _QuizPageState extends State<QuizPage> {
   final List<String> images = [
     "assets/images/image1.svg",
     "assets/images/image2.svg",
-    "assets/images/image3.svg",
     "assets/images/image4.svg",
-    "assets/images/image5.svg",
     "assets/images/image6.svg",
+    "assets/images/image3.svg",
+    "assets/images/image2.svg",
     "assets/images/image7.svg",
     "assets/images/image8.svg",
-    "assets/images/image9.svg",
-    "assets/images/image10.svg",
+    "assets/images/image5.svg",
+    "assets/images/image1.svg",
   ];
 
   // Function to handle the submission of the quiz
   void _submitQuiz() async {
-    String result = "Great job ${widget.nameId}! Here are your answers:\n\n";
+    String result = "Kerja Bagus ${widget.nameId}! Ini Jawaban kamu:\n\n";
     List<String> userAnswers = [];
 
     for (int i = 0; i < answers.length; i++) {
@@ -82,7 +82,7 @@ class _QuizPageState extends State<QuizPage> {
           return AlertDialog(
             backgroundColor: Colors.lightBlue.shade100,
             title: const Text(
-              "Awesome!",
+              "Hebat!",
               style: TextStyle(
                 fontSize: 26,
                 fontWeight: FontWeight.bold,
@@ -134,7 +134,7 @@ class _QuizPageState extends State<QuizPage> {
         backgroundColor: Colors.lightBlueAccent,
         centerTitle: true,
         title: Text(
-          'Hi ${widget.nameId}! Let\'s Play a Quiz!',
+          'Hi ${widget.nameId}! Mari kita bermain quiz!',
           style: const TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,
@@ -173,7 +173,7 @@ class _QuizPageState extends State<QuizPage> {
 
                   // Wrap question text in a card with padding and rounded corners
                   Card(
-                    color: Colors.yellowAccent,
+                    color: Colors.lightBlueAccent,
                     elevation: 5,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20),
@@ -199,7 +199,7 @@ class _QuizPageState extends State<QuizPage> {
                       Expanded(
                         child: RadioListTile<bool>(
                           title: const Text(
-                            "Yes",
+                            "Iya",
                             style: TextStyle(fontSize: 18, color: Colors.green),
                           ),
                           value: true,
@@ -214,7 +214,7 @@ class _QuizPageState extends State<QuizPage> {
                       Expanded(
                         child: RadioListTile<bool>(
                           title: const Text(
-                            "No",
+                            "Tidak",
                             style: TextStyle(fontSize: 18, color: Colors.red),
                           ),
                           value: false,
@@ -248,7 +248,7 @@ class _QuizPageState extends State<QuizPage> {
                   ),
                   onPressed:
                       currentQuestionIndex == 0 ? null : _previousQuestion,
-                  child: const Text("Previous", style: TextStyle(fontSize: 18)),
+                  child: const Text("Kembali", style: TextStyle(fontSize: 18)),
                 ),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
@@ -266,8 +266,8 @@ class _QuizPageState extends State<QuizPage> {
                       : null,
                   child: Text(
                     currentQuestionIndex == questions.length - 1
-                        ? "Submit"
-                        : "Next",
+                        ? "Selesai"
+                        : "Lanjut",
                     style: const TextStyle(fontSize: 18),
                   ),
                 ),

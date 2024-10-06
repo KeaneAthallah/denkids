@@ -17,6 +17,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
+      title: 'DenKids',
+      theme: ThemeData(
+        scaffoldBackgroundColor:
+            const Color(0xffffffff), // Set the background color here
+      ),
       home: HomePage(),
     );
   }
