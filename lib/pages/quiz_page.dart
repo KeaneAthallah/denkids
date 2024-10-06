@@ -1,6 +1,8 @@
+import 'package:denkidsv4/pages/welcome_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:cloud_firestore/cloud_firestore.dart'; // Firestore import
+import 'package:get/get.dart';
 import '../services/firestore.dart'; // Import the Firestore service
 
 class QuizPage extends StatefulWidget {
@@ -93,7 +95,7 @@ class _QuizPageState extends State<QuizPage> {
             actions: [
               TextButton(
                 onPressed: () {
-                  Navigator.pop(context);
+                  Get.to(() => WelcomePage());
                 },
                 child: const Text(
                   "OK",
