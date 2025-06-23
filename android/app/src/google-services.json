@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "350288088604",
+    "project_id": "denkidsv4-5215c",
+    "storage_bucket": "denkidsv4-5215c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350288088604:android:5de05a33bede057ced19d9",
+        "android_client_info": {
+          "package_name": "com.example.denkidsv4"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_4-EOP2yh4OljNxXnxWTliFB3jfzQ95E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
